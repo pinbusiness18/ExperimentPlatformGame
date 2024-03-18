@@ -19,13 +19,13 @@ STAR_WIDTH = 10
 STAR_HEIGHT = 20
 STAR_VELOCITY = 3
 
-PLAYER_IMAGE = pygame.transform.scale(pygame.image.load("/Users/chumpawhumps/Desktop/coding practice/Python/PygameExample-SpaceShooters/image for game/space_ship.jpg"))
+PLAYER_IMAGE = pygame.transform.scale(pygame.image.load("/Users/chumpawhumps/Desktop/coding practice/Python/PygameExample-SpaceShooters/image for game/space_ship.jpg"), (PLAYER_WIDTH, PLAYER_HEIGHT))
 player_width, player_height = PLAYER_IMAGE.get_size()
 
 player_x = (WIDTH - player_width)//2
 player_y = (HEIGHT - player_height)//2
 
-player = pygame.Rect(player.x, player.y, PLAYER_WIDTH, PLAYER_HEIGHT)
+player = pygame.Rect(player_x, player_y, PLAYER_WIDTH, PLAYER_HEIGHT)
 
 FONT = pygame.font.SysFont("Times New Roman", 20)
 
